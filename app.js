@@ -1,6 +1,9 @@
 const Express = require('express');
 const app = Express();
 
+
+app.use(Express.json());
+
 const controllers = require("./controllers");
 
 app.use("/journal", controllers.journalcontroller);
